@@ -11,5 +11,5 @@ class Hutang extends Model
     	'pembeli',
     	'alamat',
     	'total'
-    ]
+    ];
 }

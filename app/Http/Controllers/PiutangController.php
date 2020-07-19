@@ -23,7 +23,7 @@ class PiutangController extends Controller
     	]);
 
     	$piutang = Piutang::create($request->all());
-    	return $piutang
+    	return $piutang;
     }
     public function update(Request $request, Piutang $piutang)
     {
@@ -33,6 +33,6 @@ class PiutangController extends Controller
     public function destroy(Piutang $piutang)
     {
     	$piutang->delete();
-    	return response()->json(["Data has been deleted."])
+    	return response()->json(["Data has been deleted."]);
     }
 }

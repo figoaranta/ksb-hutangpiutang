@@ -23,7 +23,7 @@ class HutangController extends Controller
     	]);
 
     	$hutang = Hutang::create($request->all());
-    	return $hutang
+    	return $hutang;
     }
     public function update(Request $request, Hutang $hutang)
     {
@@ -33,6 +33,6 @@ class HutangController extends Controller
     public function destroy(Hutang $hutang)
     {
     	$hutang->delete();
-    	return response()->json(["Data has been deleted."])
+    	return response()->json(["Data has been deleted."]);
     }
 }

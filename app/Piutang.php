@@ -11,5 +11,5 @@ class Piutang extends Model
     	'pembeli',
     	'alamat',
     	'total'
-    ]
+    ];
 }
