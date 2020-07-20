@@ -18,5 +18,8 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::apiResource('hutangs','HutangController');
-Route::apiResource('piutangs','PiutangController');
+Route::prefix('v1')->group(function(){
+	Route::apiResource('hutangs','Api\v1HutangController');
+	Route::apiResource('piutangs','Api\v1PiutangController');
+});
+
