@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::prefix('v1')->group(function(){
-	Route::apiResource('hutangs','Api\v1HutangController');
-	Route::apiResource('piutangs','Api\v1PiutangController');
+	Route::apiResource('hutangs','Api\v1\HutangController');
+	Route::apiResource('piutangs','Api\v1\PiutangController');
 });
 
